@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Coda');
+/* font-family: 'Advent Pro', sans-serif; */
+/* font-family: 'Coda', cursive; */
+
+/* https://coolors.co/eae8ff-d8d5db-adacb5-2d3142-b0d7ff */
+:root{
+    --primary:#EAE8FF;
+    --primaryDark:#2D3142;
+    --light:#D8D5DB;
+    --accent:#B0D7FF;
+}
+
+body{
+    margin:0;
+    background-color:var(--primaryDark);
+    color:var(--light);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+h1,h2{
+    font-family: 'Coda', cursive;
+}
+
+p{
+   font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.main-container h1{
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+header h1{
+    font-size: 40px;
+}
+header h2{
+    font-size: 100px;
+}
+
+header p{
+    font-size: 25px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.card1 img{
+    height:35%;
+    width:45%;
+}
+.card1 h2 {
+    font-size: 20px;
+}
+.card1 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: red;
+}
+.card2 h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: red;
+}
+.card2 img{
+    height: 35%;
+    width: 10%;
+}
+.card{
+    width:500px;
+    padding: 25px;
+    border-left: solid 1px var(--accent);
+    border-right: solid 1px var(--accent);
+    border-top:solid 1px transparent;
+    border-bottom:solid 1px transparent;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    transition: border 500ms;
+}
+
+.card:hover{
+    border-top:solid 1px var(--accent);
+    border-bottom:solid 1px var(--accent);
+}
+
+footer{
+    margin-top: 50px;
+    background-color: var(--primary);
+    color: var(--primaryDark);
+    width: 100%;
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 1030px) {
+    body{
+        background-color: red;
+    }
+}
+.card-container{
+    flex-direction: column;
+}
+.class{
+    width: 80%;
+}
+
+@media(max-width: 530px) {
+    .card img {
+        width: 80%;
+        height: initial;
+    }
+}
